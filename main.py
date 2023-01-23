@@ -39,8 +39,13 @@ def check_all_messages(message):
     response('Hello!', ['hello', 'hi', 'hey', 'sup', 'heyo'], single_response=True)
     response('See you!', ['bye', 'goodbye'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
+    response('I was born last weekend.', ['how', 'old', 'you', 'age'], required_words=['how'])
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
     response('Thank you!', ['i', 'love', 'code', 'palace'], required_words=['code', 'palace'])
+    response('My name is Bobbie Bot!', ['what', 'name', 'your', 'is'], required_words=['name'])
+    response('I can\'t do math yet. Can you teach me?', ['add', '+', 'minus', '-','times','divide'], single_response=True)
+    response('Pleaaaaaase', ['no', 'can\'t'], single_response=True)
+    response('Yayay!', ['yes', 'sure','ofcourse'], single_response=True)
 
     # Longer responses
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
